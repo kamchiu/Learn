@@ -68,7 +68,7 @@ app.get('/detail/:id',function(req,res){
 app.get('/admin/movie',function(req,res){
 	res.render('admin',{
 		title: "admin page",
-		movie: [{
+		movie: {
 			title: '',
 			director: '',
 			country: '',
@@ -77,7 +77,7 @@ app.get('/admin/movie',function(req,res){
 			poster: '',
 			flash: '',
 			summary: ''
-		}]
+		}
 	})
 });
 
