@@ -1,0 +1,10 @@
+{
+  "name": "faith",
+  "description": "bower",
+  "main": "index.js",
+  "keywords": [
+    "modules"
+  ],
+  "license": "ISY",
+  "homepage": ""
+}
