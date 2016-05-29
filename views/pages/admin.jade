@@ -3,7 +3,8 @@ extends ../layout.jade
 block content
 	.container
 		.row
-			form.form-horizontal(method="post",action="admin/movie/new")
+			form.form-horizontal(method="post",action="/admin/movie/new")
+				input(type="hidden",name="movie[_id]",value="#{movie.id}")
 				.form-group
 					label.col-sm-2.control-label(for="inputTitle") Film Name
 					.col-sm-10
@@ -36,3 +37,5 @@ block content
 					label.col-sm-2.control-label(for="inputSummary") Summary
 					.col-sm-10
 						input#inputSummary.form-control(type="text",name="movie[summary]", value="#{movie.summary}")
+				.form-group
+					input(type="submit",value="submit")

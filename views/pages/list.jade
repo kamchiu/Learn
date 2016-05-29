@@ -9,7 +9,7 @@ block content
 						th Director
 						th Country
 						th Release Year
-						//-th Entry Time
+						th Entry Time
 						th Check
 						th Update
 						th Delete
@@ -20,7 +20,7 @@ block content
 							td #{item.director}
 							td #{item.country}
 							td #{item.year}
-							//-td #{moment(item.meta.createAt).format("MM/DD/YYYY")}
+							td #{moment(item.meta.createAt).format("MM/DD/YYYY")}
 							td: a(href="../movie/#{item._id}",target="_blank") View
 							td: a(href="../admin/update/#{item._id}") Change
 							td
